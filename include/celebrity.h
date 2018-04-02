@@ -4,22 +4,49 @@
 
 /************************************************************* 
  * This class represents an interface for our celebrity class
- * @author Runquan Ye
+ * @author Runquan Ye, Nabeel Vali
  ************************************************************/
 
 class celebrity {
 
 	public:
-		/************************************************************
-	 	* Constructor to initialize the celebrity
-	 	***********************************************************/
-		celebrity::celebrity(std::string name, std::string famous_field, int desire, int meet);
+		/**
+	 	*Constructor to initialize a celebrity
+	 	*/
+		celebrity(std::string name, std::string famous_field, int desire, bool haveMet);
 
-		/************************************************************
-		 * Returns the name of the celebrity
-		 * @return string, celebrity's name
-		 ***********************************************************/
-		std::string getName()const;
+		/**
+ 		*Empty celebrity constructor
+ 		*/ 	
+		celebrity();
+
+		/**
+		 *Returns the name of the celebrity
+		 *@return string - celebrity's name
+		 */
+		std::string getName() const;
+
+		/*&
+ 		*Returns the area in which the celebrity is famous in 
+		@return string - field in which the celeb is famous in 
+ 		*/	 	
+		std::string getArea() const;
+
+		/**
+ 		*Returns how badly we want to meet the celebrity
+		*@return int - how badly we want to meet 0-10 
+ 		*/ 	
+		int getDesire() const;
+
+		/**
+ 		*Whether or not we have met the celeb
+		*@return bool - have met or not
+ 		*/	
+		bool hasMet() const;
+
+		bool operator<(const celebrity c1, const celebrity c2);
+
+		bool operator<=(const celebrity c1, const celebrity c2);		
 
 	private:
 		/** celebrity's name*/
@@ -32,7 +59,7 @@ class celebrity {
 	  	int desire;
 
 		/** deet the celebrity yet; 1 for meet, 0 for not*/
-	  	int meet;
+	  	bool haveMet; 
 
 };
 
