@@ -44,9 +44,15 @@ class celebrity {
  		*/	
 		bool hasMet() const;
 
-		bool operator<(const celebrity c1, const celebrity c2);
+		void setName(const std::string name);
 
-		bool operator<=(const celebrity c1, const celebrity c2);		
+		void setDesire(const int desireVal);
+
+		void setMet(bool met);
+
+		friend bool operator<(const celebrity c1, const celebrity c2);
+
+		friend bool operator<=(const celebrity c1, const celebrity c2);		
 
 	private:
 		/** celebrity's name*/
@@ -63,4 +69,7 @@ class celebrity {
 
 };
 
+//		bool operator<(const celebrity c1, const celebrity c2);
+
+//		bool operator<=(const celebrity c1, const celebrity c2);
 #endif
