@@ -46,8 +46,8 @@ fi
 	echo "We are Testing the Selection Sort for 10000 elements."
 	time ./a.out 2 10000
 	
-	echo "We are Testing the Selection Sort for 10000 elements."
-	time ./a.out 2 10000
+	echo "We are Testing the Selection Sort for 100000 elements."
+	time ./a.out 2 100000
 
 	echo "We are Testing the Selection Sort for 1000000 elements."
 	time ./a.out 2 1000000
@@ -69,8 +69,8 @@ fi
 	echo "We are Testing the Insertion Sort for 10000 elements."
 	time ./a.out 3 10000
 	
-	echo "We are Testing the Insertion Sort for 10000 elements."
-	time ./a.out 3 10000
+	echo "We are Testing the Insertion Sort for 100000 elements."
+	time ./a.out 3 100000
 
 	echo "We are Testing the Insertion Sort for 1000000 elements."
 	time ./a.out 3 1000000
@@ -92,8 +92,8 @@ fi
 	echo "We are Testing the Merge Sort for 10000 elements."
 	time ./a.out 4 10000
 	
-	echo "We are Testing the Merge Sort for 10000 elements."
-	time ./a.out 4 10000
+	echo "We are Testing the Merge Sort for 100000 elements."
+	time ./a.out 4 100000
 
 	echo "We are Testing the Merge Sort for 1000000 elements."
 	time ./a.out 4 1000000
@@ -115,8 +115,8 @@ fi
 	echo "We are Testing the Quick Sort for 10000 elements."
 	time ./a.out 5 10000
 	
-	echo "We are Testing the Quick Sort for 10000 elements."
-	time ./a.out 5 10000
+	echo "We are Testing the Quick Sort for 100000 elements."
+	time ./a.out 5 100000
 
 	echo "We are Testing the Quick Sort for 1000000 elements."
 	time ./a.out 5 1000000
