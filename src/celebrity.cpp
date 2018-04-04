@@ -2,7 +2,8 @@
 #include <string>
 
 /************************************************************ 
- * This class represents an interface for our celebrity class
+ * This class represents an instance template for our 
+ * celebrity class
  * @author Runquan Ye, Nabeel Vali
  ***********************************************************/
 
@@ -97,14 +98,6 @@
 	 *@param celebrity, c1, c2
  	 ***************************************************************/
 	bool operator<=(const celebrity c1, const celebrity c2){
-	//	if(c1.getDesire() > c2.getDesire()){
-	//		return false;
-	//	}else if(c1.hasMet() && !c2.hasMet()){
-	//		return false;
-	//	}
-	
-	//	return !(c1.getName() > c2.getName());
-	
 		return c1 < c2;
 	}
 

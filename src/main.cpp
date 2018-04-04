@@ -5,16 +5,34 @@
 #include <iostream>
 #include <cstdlib>
 
+/**********************************************************************
+ *Main class to run sorting algorithms with user specified number of
+ *celebrities
+ *@author Nabeel Vali
+ *********************************************************************/ 
 
+
+
+
+/**********************************************************************
+ *Method returns a new celebrity object created with random data
+ *@returns celebrity
+ *********************************************************************/ 
 celebrity getCeleb();
 
+/**********************************************************************
+ *Method returns random string based on ascii characters
+ *@return string - random character string
+ *********************************************************************/
 std::string getRandomStr();
 
+/**********************************************************************
+ *Main method to run sorting algorithms with user specified number of
+ *celebrities
+ *********************************************************************/
 int main(int argc, char** argv){
 
 
-//	for(int j = 0; j < 10; j++)
-//		getRandomStr();
 
 	int sortType = std::stoi(argv[1]);
 	int numCelebs = std::stoi(argv[2]);
@@ -24,6 +42,8 @@ int main(int argc, char** argv){
 	for(int i = 0; i < numCelebs; i++){
 		celebrityList.push_back(getCeleb());
 	}
+
+//Commented out code was to sort 10 celebrities in part 1
 
 //	celebrity c1("Leonardo Dicaprio", "Acting", 9, false);
 //	celebrity c2("Donald Trump", "Politics", 1, false);
@@ -76,8 +96,10 @@ int main(int argc, char** argv){
 	}
 }
 
-
-
+/**********************************************************************
+ *Method returns a new celebrity object based on random data
+ *@returns celebrity - new celebtrity
+ *********************************************************************/
 
 	celebrity getCeleb(){
 		
@@ -90,6 +112,11 @@ int main(int argc, char** argv){
 
 		return c1;
 	}
+
+/**********************************************************************
+ *Method returns 8 chracter string with random chacters
+ *@returns string - random character string
+ *********************************************************************/
 
 	std::string getRandomStr(){
 		

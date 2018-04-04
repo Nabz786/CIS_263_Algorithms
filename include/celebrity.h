@@ -84,7 +84,7 @@ class celebrity {
 		/** the degree of desire you want to see that celebrity */
 	  	int desire;
 
-		/** deet the celebrity yet; 1 for meet, 0 for not*/
+		/** met the celebrity 1 for meet, 0 for not*/
 	  	bool haveMet; 
 
 };
